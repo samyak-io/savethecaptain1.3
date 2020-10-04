@@ -134,7 +134,7 @@ function spikeObstacles(){
 
 function fireBallObstacle(){
   if(frameCount % 160 === 0 && score > 100){
-    fireBall = createSprite(windowWidth, random(ground.y - 20, ground.y - 70), 20, 20);
+    fireBall = createSprite(windowWidth, random(ground.y - 20, ground.y - 110), 20, 20);
     fireBall.addAnimation("fire",fireBallImg);
     fireBall.scale = 1.2;
     fireBall.velocityX = - 18;
@@ -145,7 +145,7 @@ function fireBallObstacle(){
 
 function silverCoin(){
   if(frameCount % 100 === 0){
-    silverCoins = createSprite(windowWidth, random(ground.y - 15, ground.y - 100), 20, 20);
+    silverCoins = createSprite(windowWidth, random(ground.y - 15, ground.y - 120), 20, 20);
     silverCoins.addAnimation("sCoin",silverCoinsImg);
     silverCoins.scale = 0.1;
     silverCoins.velocityX = -5;
@@ -156,7 +156,7 @@ function silverCoin(){
 
 function goldCoin(){
   if(frameCount % 220 === 0 && score > 150){
-    goldCoins = createSprite(windowWidth, random(ground.y - 15, ground.y - 100), 20, 20);
+    goldCoins = createSprite(windowWidth, random(ground.y - 15, ground.y - 120), 20, 20);
     goldCoins.addAnimation("gCoin",goldCoinsImg);
     goldCoins.scale = 0.1;
     goldCoins.velocityX = -5;
